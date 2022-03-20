@@ -10,8 +10,8 @@ ADD . /app
 #Installing required packages
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-#Open port 5000
-EXPOSE 5000
+#Open port 80
+EXPOSE 80
 
 #Set environment variable
 ENV NAME OpentoAll

@@ -34,6 +34,6 @@ def predict_api():
     output = prediction[0]
     return jsonify(output)
 
-port = int(os.environ.get('PORT', 5000))
+port = int(os.environ.get('PORT', 80))
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=port)
